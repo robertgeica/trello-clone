@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import AddCard from './components/AddCard';
+import Card from './components/Card';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	const [cards, setCard] = useState([
+		{
+			title: 'card1'
+		}
+	]);
+
+
+	const addCard = (title) => {
+		const newCard = [...cards, {title}];
+		setCard(newCard);
+		console.log('add card:' + title);
+	}
+
+  	return (
+    	<div>
+
+			<div className="board">
+				{
+					cards.map((card, index) => (
+					<Card 
+						key={index} 
+						card={card}
+					/>))
+				}
+
+				<AddCard 
+					addCard={addCard} 
+					placeholder="add card" 
+				/>
+
+			</div>
+
+    	</div>
+  	);
 }
 
 export default App;
