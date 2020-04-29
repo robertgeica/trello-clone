@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/robertgeica/trello-clone/static/css/main.2756f838.chunk.css",
+    "main.js": "/robertgeica/trello-clone/static/js/main.9d5a4842.chunk.js",
+    "main.js.map": "/robertgeica/trello-clone/static/js/main.9d5a4842.chunk.js.map",
+    "runtime-main.js": "/robertgeica/trello-clone/static/js/runtime-main.a777ed1c.js",
+    "runtime-main.js.map": "/robertgeica/trello-clone/static/js/runtime-main.a777ed1c.js.map",
+    "static/js/2.33cdde94.chunk.js": "/robertgeica/trello-clone/static/js/2.33cdde94.chunk.js",
+    "static/js/2.33cdde94.chunk.js.map": "/robertgeica/trello-clone/static/js/2.33cdde94.chunk.js.map",
+    "index.html": "/robertgeica/trello-clone/index.html",
+    "precache-manifest.5a7f67f592a30fdfecb2a24e81d8984f.js": "/robertgeica/trello-clone/precache-manifest.5a7f67f592a30fdfecb2a24e81d8984f.js",
+    "service-worker.js": "/robertgeica/trello-clone/service-worker.js",
+    "static/css/main.2756f838.chunk.css.map": "/robertgeica/trello-clone/static/css/main.2756f838.chunk.css.map",
+    "static/js/2.33cdde94.chunk.js.LICENSE.txt": "/robertgeica/trello-clone/static/js/2.33cdde94.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a777ed1c.js",
+    "static/js/2.33cdde94.chunk.js",
+    "static/css/main.2756f838.chunk.css",
+    "static/js/main.9d5a4842.chunk.js"
+  ]
+}
