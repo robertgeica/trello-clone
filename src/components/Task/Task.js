@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import TaskModal from './TaskModal';
-import '../styles/Task.css';
+import TaskModal from '../TaskModal/TaskModal';
+import './Task.css';
 
 
 const Task = ({index, removeTask, task}) => {
@@ -28,12 +28,14 @@ const Task = ({index, removeTask, task}) => {
                 removeTask={removeTask}
             />
             
-            <p 
-                onClick={handleOpenModal} 
-                className="task-title"
-            >
-                {task.title ? task.title : ''}
-            </p>
+            <div className="task">
+                <p 
+                    onClick={handleOpenModal} 
+                    className="task-title"
+                >
+                    {task.title ? task.title : ''}
+                </p>
+            </div>
 
         </div>
     );

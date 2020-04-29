@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import '../styles/AddCard.css';
+import './AddCard.css';
 
-const AddCard = ({addCard, placeholder}) => {
+const AddCard = ({addCard}) => {
 
     const [value, setValue] = useState('');
 
@@ -9,18 +9,20 @@ const AddCard = ({addCard, placeholder}) => {
         e.preventDefault();
         
         if(!value) return;
+        if(value.trim() == '') return;
         addCard(value);
         setValue('');
     }
 
-    return (
-        <div className="card empty-card">
 
-            <form onSubmit={handleSubmitCard}>
+    return (
+        <div className="empty-card card">
+
+            <form className="addCard-form" onSubmit={handleSubmitCard}>
                 <input
                     type="text"
                     className="addCard-input"
-                    placeholder={placeholder}
+                    placeholder="Add new task"
                     value={value}
                     onChange={e => setValue(e.target.value)}
                     

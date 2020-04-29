@@ -1,21 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-  background: grey;
+  /* background: #FBFBFD; */
+  /* overflow-x: auto; */
+  background-color: #343434;
+
+}
+
+.App {
+	overflow-x: scroll;
+	height: 100vh;
 }
 
 .board {
 	display: flex;
 	flex-direction: row;
+	margin-right: 10em;
+	width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 

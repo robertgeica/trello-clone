@@ -1,0 +1,20 @@
+
+.checklist-container {
+    font-size: 1em;
+    margin: 1em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.checklist-title {
+    font-size: 1.1em;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.checklist-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

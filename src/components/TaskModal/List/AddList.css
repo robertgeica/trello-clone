@@ -1,0 +1,29 @@
+.addlist {
+    
+}
+
+.addlist-form {
+    
+}
+
+.addlist-input {
+    outline: none;
+    border: none;
+	padding: 1em;
+	border-radius: 5px;
+	background-color: #333336;
+    color: #fff;
+    cursor: pointer;
+}
+
+.addlist-input:hover {
+    
+    width: 100%;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.addlist-input:focus {
+    color: #fff;
+    text-decoration: none;
+}

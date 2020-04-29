@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
-import '../styles/AddTask.css';
+import './AddTask.css';
 
 
 const AddTask = ({addTask, placeholder}) => {
 
     const [value, setValue] = useState('');
-
     const handleSubmitTask = (e) => {
         e.preventDefault();
         
@@ -15,14 +14,13 @@ const AddTask = ({addTask, placeholder}) => {
     }
 
     return (
-        <form onSubmit={handleSubmitTask}>
+        <form className="input-form" onSubmit={handleSubmitTask}>
             <input
                 className="task-input"
                 type="text"
-                placeholder={placeholder}
+                placeholder="Add new task"
                 value={value}
                 onChange={e => setValue(e.target.value)}
-                
             />
         </form>
     )

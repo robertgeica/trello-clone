@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import './App.css';
-import AddCard from './components/AddCard';
-import Card from './components/Card';
+import AddCard from './components/Card/AddCard';
+import Card from './components/Card/Card';
 
 function App() {
 
 	const [cards, setCard] = useState([
 		{
-			title: 'card1'
+			title: 'Todo'
 		}
 	]);
 
@@ -19,7 +19,7 @@ function App() {
 	}
 
   	return (
-    	<div>
+    	<div className="App">
 
 			<div className="board">
 				{
@@ -32,7 +32,7 @@ function App() {
 
 				<AddCard 
 					addCard={addCard} 
-					placeholder="add card" 
+					placeholder="Add new card" 
 				/>
 
 			</div>

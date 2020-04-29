@@ -7,33 +7,32 @@
     display: flex;
     justify-content: center;
     transition: opacity 200ms ease-in-out;
+
 }
 
 .ReactModalPortal .ReactModal__Overlay--after-open {
     opacity: 1;
+    
 }
 
 .ReactModalPortal .ReactModal__Overlay--before-close {
     opacity: 0;
+
 }
 
 .modal {
-    background: lightgrey;
-    color: black;
+    background: #333336;
+    color: #fff;
     outline: none;
-    width: 80%;
-    height: 500px;
+    width: 50em;
+    height: 40em;
+    border-radius: 10px;
+
 }
 
-
-.close-modal, .remove-modal {
-    border: none;
-    background: none;
-    font-size: 1.2em;
-}
 
 .modal-title {
     padding: .5em;
     margin-top: 0;
-    border-bottom: 1px solid black;
+
 }

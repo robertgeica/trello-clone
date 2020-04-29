@@ -1,0 +1,13 @@
+.list {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-element {
+    color: #fff;
+    margin-left: 1em;
+}
+
+i {
+    cursor: pointer;
+}

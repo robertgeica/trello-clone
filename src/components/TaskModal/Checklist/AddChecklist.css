@@ -1,0 +1,56 @@
+.checklist {
+    background-color: #23374d;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+
+
+}
+
+.checklist h3 {
+    border-bottom: 1px solid grey;
+    padding: .5em;
+    margin: 0 1em;
+
+}
+
+.checklist-form {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    padding: 1em;
+    
+}
+
+.checklist-input {
+	border: none;
+    padding: .5rem 0;
+    margin: 1em;
+    width: 7em;
+	background-color: #385e88;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.addChecklistBtn {
+    outline: none;
+    border: none;
+    background-color: #385e88;
+    color: #fff;
+    width: 7em;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+    font-size: .9em;
+}
+
+.addChecklistBtn:hover {
+    background-color: #4271a7;
+    
+}
+
+.addChecklistBtn:active {
+    background-color: #263f5c;
+    
+}
