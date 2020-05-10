@@ -8,6 +8,7 @@ const Card = ({card}) => {
 
     const [tasks, setTask] = useState([{title: 'Website Redesign'}]);
 
+
     const addTask = (title) => {
 		const newTask = [...tasks, {title}];
         if(title.trim() !== '') {
@@ -27,6 +28,8 @@ const Card = ({card}) => {
             <div className="card-content">
                 <h1 className="card-title">{card.title}</h1>
 
+
+                
                 <div className="tasks">
                     {
                         tasks.map((task, index) => (
@@ -37,8 +40,8 @@ const Card = ({card}) => {
                             removeTask={removeTask} 
                         />))
                     }
-                    
                 </div>
+
                 <AddTask addTask={addTask} />
         
             </div>

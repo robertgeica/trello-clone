@@ -5,6 +5,10 @@ import Checklist from './Checklist/Checklist';
 import AddChecklist from './Checklist/AddChecklist';
 import ModalHeader from './ModalHeader';
 
+import Timer from './Timer/Timer';
+
+
+
 
 const TaskModal = ({index, removeTask, title, selectedTask, handleCloseModal}) => {
 
@@ -35,7 +39,9 @@ const TaskModal = ({index, removeTask, title, selectedTask, handleCloseModal}) =
             />
 
             <div>
+            
                 <h1 className="modal-title">{title}</h1>
+                <Timer />
 
                 {
                     checklists.map((item, index) => (
@@ -47,6 +53,7 @@ const TaskModal = ({index, removeTask, title, selectedTask, handleCloseModal}) =
                 }
     
             </div>
+
 
         </Modal>
     )

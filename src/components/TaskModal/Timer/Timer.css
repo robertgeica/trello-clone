@@ -1,0 +1,21 @@
+.estimated-time {
+    padding: 2em;
+    border: 1px solid blue;
+    font-size: .7em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.predefined-time {
+    margin: .2em;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: .5em;
+    color: black;
+
+}
+
+.predefined-time:hover {
+    cursor: pointer;
+}
